@@ -3,6 +3,14 @@
         "$.schema.vendor",
         "$.schema.name",
         "$.schema.format",
-        "$.schema.version"
+        "$.schema.version",
+        "$.hierarchy.rootId",
+        "$.hierarchy.rootTstamp",
+        "$.hierarchy.refRoot",
+        "$.hierarchy.refTree",
+        "$.hierarchy.refParent",
+        "$.data.exampleIntegerField",
+        "$.data.exampleStringField",
+        "$.data.exampleTimestampField"
     ]
 }
