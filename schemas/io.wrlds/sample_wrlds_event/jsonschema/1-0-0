@@ -2,8 +2,8 @@
 	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
 	"description": "Schema for WRLDS example event",
 	"self": {
-		"vendor": "com.wrldsio",
-		"name": "wrlds_example_event",
+		"vendor": "io.wrlds",
+		"name": "sample_wrlds_event",
 		"format": "jsonschema",
 		"version": "1-0-0"
 	},
@@ -11,16 +11,19 @@
 	"type": "object",
 	"properties": {
 		"exampleStringField": {
+			"description": "Example string field", 
 			"type": "string",
 			"maxLength": 255
 		},
 		"exampleIntegerField": {
+			"description": "Example integer field", 
 			"type": "integer",
 			"minimum": 0,
 			"maximum": 100000
 		},
 		"exampleTimestampField": {
-			"type": "string",
+			"description": "Example timestamp field", 
+			"type": ["string", "null"],
 			"format": "date-time"
 		}
 	},
